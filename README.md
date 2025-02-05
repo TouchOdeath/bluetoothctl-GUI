@@ -26,5 +26,5 @@ Note:  If you have a mouse, sometimes you have to press 'Left-Click' to initiate
 
  
 4.  Download BluetoothConnect.desktop and edit 'Exec=' and 'Icon='
-5.  chmod +x BluetoothConnect.desktop && chmod +x BTConnect.sh
+5.  chmod +x BTConnect.sh
 6.  Done.
