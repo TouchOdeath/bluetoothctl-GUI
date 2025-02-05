@@ -4,13 +4,13 @@ Bluetooth in Linux can sometimes be finicky, this can make it work like its supp
 # Usage:
 
 1.  Download BTConnect.sh
-2.  Edit  '<equalizername\>' and '<equalizerexec\>'
-3.  If you have an equalizer, uncomment out and edit below:
+2.  If you have an equalizer, uncomment and edit '<equalizername\>' and '<equalizerexec\>' below:
 
  #Restart Equalizer-------------------------------------
+ 
   #pkill <equalizername\>
   
-  #nohup <equalizerexec> > /dev/null 2>&1 & disown
+  #nohup <equalizerexec\> > /dev/null 2>&1 & disown
 
  #Restart Equalizer-------------------------------------
 
