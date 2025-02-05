@@ -7,7 +7,7 @@ Note:  If you have a mouse, sometimes you have to press 'Left-Click' to initiate
 
 # Usage:
 
-1.  Requires zenity and bluetoothctl (type 'bluetoothctl' or 'zenity' in terminal to see if they are installed).  If not install manually:
+1.  Requires bluetoothctl and zenity (type 'bluetoothctl' or 'zenity' in terminal to see if they are installed).  If not install manually:
  
     apt install zenity
     
