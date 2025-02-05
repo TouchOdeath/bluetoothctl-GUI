@@ -49,18 +49,17 @@ else
     exit 1
 fi
 
-mouse_mac="${mac_addresses[0]}"
-headphones_mac="${mac_addresses[1]}"
-
 
 
 bluetoothctl power off
 sleep 1
 bluetoothctl power on
 sleep 2
-[ -n "$mouse_mac" ] && bluetoothctl connect "$mouse_mac"
-[ -n "$headphones_mac" ] && bluetoothctl connect "$headphones_mac"
+for mac in "${mac_addresses[@]}"; do
+  [ -n "$mac" ] && bluetoothctl connect "$mac"
+done
 
+sleep 2
 # Restart Equalizer-------------------------------------
 #pkill <equalizername>
 #nohup <equalizerexec> > /dev/null 2>&1 & disown
