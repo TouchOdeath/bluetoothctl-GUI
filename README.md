@@ -5,8 +5,9 @@ Bluetooth in Linux can sometimes be finicky, this can make it work like its supp
 
 1.  Download BTConnect.sh
 2.  Edit <equalizername> and <equalizerexec>
-# Restart Equalizer-------------------------------------
+## Restart Equalizer-------------------------------------
 #pkill <equalizername>
 #nohup <equalizerexec> > /dev/null 2>&1 & disown
-# Restart Equalizer-------------------------------------
-3.  Create a .desktop file
+## Restart Equalizer-------------------------------------
+3.  Download BluetoothConnect.desktop and edit 'Exec=' and 'Icon='
+4.  chmod +x desktop && chmod +x BTConnect.sh
