@@ -55,6 +55,7 @@ bluetoothctl power off
 sleep 1
 bluetoothctl power on
 sleep 2
+#if you have a mouse and its not connecting, sometimes you need to press 'left click' in order to initiate the connection.
 for mac in "${mac_addresses[@]}"; do
   [ -n "$mac" ] && bluetoothctl connect "$mac"
 done
