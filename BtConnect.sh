@@ -6,7 +6,7 @@ previously_connected_devices=$(mktemp)
 bluetoothctl devices | while read -r line; do
     MAC=$(echo "$line" | awk '{print $2}')
     device_name=$(echo "$line" | cut -d ' ' -f3-)
-    device_name=${device_name// /_}  # Replace spaces with underscores
+    device_name=${device_name// /_}
     if bluetoothctl info "$MAC" | grep -q "Connected: yes"; then
         echo "$device_name|$MAC" >> "$connected_devices"
     fi
@@ -15,7 +15,7 @@ done
 bluetoothctl paired-devices | while read -r line; do
     MAC=$(echo "$line" | awk '{print $2}')
     device_name=$(echo "$line" | cut -d ' ' -f3-)
-    device_name=${device_name// /_}  # Replace spaces with underscores
+    device_name=${device_name// /_}
     if bluetoothctl info "$MAC" | grep -q "Connected: no"; then
         echo "$device_name|$MAC" >> "$previously_connected_devices"
     fi
