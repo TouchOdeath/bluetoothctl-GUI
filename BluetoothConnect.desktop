@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BluetoothConnect
+Comment=
+Exec="/home/youruser/BtConnect.sh"
+Icon=/home/youruser/bluetooth-icon-1.png
+Terminal=false
+StartupNotify=false
