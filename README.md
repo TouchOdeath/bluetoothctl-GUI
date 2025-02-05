@@ -10,10 +10,11 @@ Note:  If you have a mouse, sometimes you have to press 'Left-Click' to initiate
 1.  Requires zenity and bluetoothctl (you can type 'bluetoothctl' or 'zenity' in terminal to see if they are installed)
  
     apt install zenity
+    
     apt install bluez
   
-2.  Download BTConnect.sh
-3.  If you have an equalizer, uncomment and edit '<equalizername\>' and '<equalizerexec\>' below:
+3.  Download BTConnect.sh
+4.  If you have an equalizer, uncomment and edit '<equalizername\>' and '<equalizerexec\>' below:
 
  #Restart Equalizer-------------------------------------
  
