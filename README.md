@@ -8,7 +8,7 @@ Bluetooth in Linux can sometimes be finicky, this can make it work like its supp
 3.  If you have an equalizer, uncomment out and edit below:
 
  #Restart Equalizer-------------------------------------
-  #pkill <equalizername>
+  #pkill <equalizername\>
   
   #nohup <equalizerexec> > /dev/null 2>&1 & disown
 
